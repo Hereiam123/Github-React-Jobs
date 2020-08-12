@@ -3,7 +3,7 @@ import useFetchJobs from "./useFetchJobs";
 import { Container } from "react-bootstrap";
 
 function App() {
-  const { jobs, loading, error } = useFetchJobs({}, 1);
+  const { jobs, loading, error } = useFetchJobs([], 1);
   return (
     <Container>
       {loading && <h1>Loading...</h1>}
