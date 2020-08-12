@@ -47,6 +47,6 @@ export default function useFetchJobs(params, page) {
     return () => {
       cancelToken.cancel();
     };
-  }, [params, page]);
+  }, []);
   return state;
 }
